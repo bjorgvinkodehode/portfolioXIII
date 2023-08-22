@@ -8,28 +8,28 @@ const MultiPageComponent = () => {
         {
             title: "Project A",
             link: "https://bjorgvinkodehode.github.io/Pluto/",
-            imageUrl: "src/assets/pluto.png",
+            imageUrl: "assets/pluto.png",
             description: "This was the first website we created, it was about exploring HTML and CSS...",
             githubLink: "https://github.com/bjorgvinkodehode/Pluto"
         },
         {
             title: "Project B",
             link: "https://bjorgvinkodehode.github.io/Pluto/",
-            imageUrl: "src/assets/neptune.png",
+            imageUrl: "assets/neptune.png",
             description: "This was the first website we created, it was about exploring HTML and CSS...",
             githubLink: "https://bjorgvinkodehode.github.io/Neptune/"
         },
         {
             title: "Project C",
             link: "https://bjorgvinkodehode.github.io/Pluto/",
-            imageUrl: "src/assets/pluto.png",
+            imageUrl: "assets/pluto.png",
             description: "This was the first website we created, it was about exploring HTML and CSS...",
             githubLink: "https://github.com/bjorgvinkodehode/Pluto"
         },
         {
             title: "Project D",
             link: "https://bjorgvinkodehode.github.io/Pluto/",
-            imageUrl: "src/assets/pluto.png",
+            imageUrl: "assets/pluto.png",
             description: "This was the first website we created, it was about exploring HTML and CSS...",
             githubLink: "https://github.com/bjorgvinkodehode/Pluto"
         },
