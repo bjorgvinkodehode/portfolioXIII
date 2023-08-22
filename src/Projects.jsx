@@ -14,10 +14,10 @@ const MultiPageComponent = () => {
         },
         {
             title: "Project B",
-            link: "https://bjorgvinkodehode.github.io/Pluto/",
+            link: "https://bjorgvinkodehode.github.io/Neptune/",
             imageUrl: "assets/neptune.png",
             description: "This was the first website we created, it was about exploring HTML and CSS...",
-            githubLink: "https://bjorgvinkodehode.github.io/Neptune/"
+            githubLink: "https://github.com/bjorgvinkodehode/Neptune"
         },
         {
             title: "Project C",
