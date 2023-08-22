@@ -9,7 +9,7 @@ function Home() {
         </h2>
         <img
           className="profilepicture"
-          src="src/assets/bbbb.png"
+          src="./src/assets/bbbb.png"
           alt="picture of the developer"
         />
       </section>
@@ -18,3 +18,7 @@ function Home() {
   }
   
   export default Home;
+
+  
+  
+  
