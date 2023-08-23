@@ -15,7 +15,7 @@ const MultiPageComponent = () => {
         {
             title: "Project B",
             link: "https://bjorgvinkodehode.github.io/Neptune/",
-            imageUrl: "assets/neptune.png",
+            imageUrl: "assets/Neptune.png",
             description: "This was the first website we created, it was about exploring HTML and CSS...",
             githubLink: "https://github.com/bjorgvinkodehode/Neptune"
         },
