@@ -1,5 +1,8 @@
 import './Projects.css';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';  // Importing the icons
+
 
 const MultiPageComponent = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -72,8 +75,12 @@ const MultiPageComponent = () => {
         <div className="page-container">
             {/* Page switcher buttons */}
             <div className="page-switcher">
-                <button onClick={() => setCurrentPage(1)} className={currentPage === 1 ? "active" : ""}>Page 1</button>
-                <button onClick={() => setCurrentPage(2)} className={currentPage === 2 ? "active" : ""}>Page 2</button>
+            <button onClick={() => setCurrentPage(1)} className={currentPage === 1 ? "active" : ""}>
+                <FontAwesomeIcon icon={faChevronLeft} />
+            </button>
+            <button onClick={() => setCurrentPage(2)} className={currentPage === 2 ? "active" : ""}>
+                <FontAwesomeIcon icon={faChevronRight} />
+            </button>
             </div>
 
             {/* Projects Grid */}
@@ -86,7 +93,7 @@ const MultiPageComponent = () => {
                         </a>
                         <p className="card-description">
                             {project.description}
-                            <a target="_blank" rel="noreferrer" href={project.githubLink} className="card-description-link">GitHub</a>
+                            <a target="_blank" rel="noreferrer" href={project.githubLink} className="card-description-link"> GitHub</a>
                         </p>
                     </div>
                 ))}

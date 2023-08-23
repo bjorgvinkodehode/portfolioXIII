@@ -1,10 +1,9 @@
 .header-grid {
   display: grid;
-  grid-template-rows: 2fr 5fr 2fr;
+  grid-template-rows: 2fr 7fr 1fr;
   align-items: center;
   background-color: var(--clr-darkbrown);
   color: var(--clr-orange);
-  padding: 1rem;
 }
 
 nav ul {
@@ -14,14 +13,9 @@ nav ul {
   justify-content: center;
 }
 
-nav li {
-  margin: 0 0.5rem;
-}
-
 nav a {
   text-decoration: none;
   color: inherit;
-  padding: 0.5rem;
   transition: background-color 0.3s ease;
 }
 

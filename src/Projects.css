@@ -10,31 +10,36 @@
 
 .page-switcher button {
   margin: 0 0.5rem;
-  padding: 0.5rem 1rem;
   border: none;
-  background-color: #f4f4f4;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color: transparent;
+  color: var(--clr-orange);
+  opacity: 0.5;
+}
+
+.svg-inline--fa {
+  height: 1.3rem;
 }
 
 .page-switcher button.active {
-  background-color: #ddd;
+  opacity: 1;
 }
 
 .page-switcher button:hover {
-  background-color: #e4e4e4;
+  transform: scale(1.3);
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  height: 70vh;
-  padding: 2rem;
+  height: 65vh;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+  padding-bottom: 2.2rem;
 }
 
 .card {
-  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,9 +64,12 @@
 .card-description {
   margin: 10px 0;
 }
+.card-description {
+  color: var(--clr-darkbrown);
+}
 
 .card-description-link {
-  color: blue;
+  color: var(--clr-darkviolet);
   text-decoration: underline;
 }
 
