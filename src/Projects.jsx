@@ -6,32 +6,32 @@ const MultiPageComponent = () => {
 
     const projects = [
         {
-            title: "Project A",
+            title: "Parallax",
+            link: "https://bjorgvinkodehode.github.io/Parallax/",
+            imageUrl: "assets/Parallax.png",
+            description: "This was the first website we created",
+            githubLink: "https://github.com/bjorgvinkodehode/Parallax"
+        },
+        {
+            title: "Pluto",
             link: "https://bjorgvinkodehode.github.io/Pluto/",
             imageUrl: "assets/pluto.png",
             description: "This was the first website we created, it was about exploring HTML and CSS...",
             githubLink: "https://github.com/bjorgvinkodehode/Pluto"
         },
         {
-            title: "Project B",
+            title: "Neptune",
             link: "https://bjorgvinkodehode.github.io/Neptune/",
             imageUrl: "assets/Neptune.png",
             description: "This was the first website we created, it was about exploring HTML and CSS...",
             githubLink: "https://github.com/bjorgvinkodehode/Neptune"
         },
         {
-            title: "Project C",
-            link: "https://bjorgvinkodehode.github.io/Pluto/",
-            imageUrl: "assets/pluto.png",
-            description: "This was the first website we created, it was about exploring HTML and CSS...",
-            githubLink: "https://github.com/bjorgvinkodehode/Pluto"
-        },
-        {
-            title: "Project D",
-            link: "https://bjorgvinkodehode.github.io/Pluto/",
-            imageUrl: "assets/pluto.png",
-            description: "This was the first website we created, it was about exploring HTML and CSS...",
-            githubLink: "https://github.com/bjorgvinkodehode/Pluto"
+            title: "GameOfLife",
+            link: "https://bjorgvinkodehode.github.io/GameOfLife/",
+            imageUrl: "assets/GameOfLife.png",
+            description: "The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input.",
+            githubLink: "https://github.com/bjorgvinkodehode/GameOfLife"
         },
         {
             title: "Project E",
