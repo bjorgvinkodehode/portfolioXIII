@@ -19,35 +19,35 @@
 .contactform textarea {
   width: 130%;
   padding: 10px;
-  border-radius: 0px;
-  background-color: #ffeee3; /* Background color */
+  border-radius: 10px;
+  background-color: var(--clr-white);
 }
 
 .contactform textarea {
-  width: 130%; /* Make the textarea wider */
-  height: 200px; /* Adjust the height as needed */
+  width: 130%;
+  height: 200px;
   resize: vertical;
 }
 
 .contactform input[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--clr-darkerorange);
+  color: black;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-  margin-top: 10px; /* Add some spacing below the form elements */
+  margin-top: 10px;
 }
 
 .contactform input[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: var(--clr-white);
 }
 
 .footer {
   margin-top: 20px;
   text-align: center;
-  color: #888;
+  color: var(--clr-darkbrown);
 }
 
 /* Center the form vertically */
@@ -58,4 +58,5 @@
   justify-content: center;
   min-height: 70vh;
   background-color: var(--clr-darkbrown);
+  border-radius: 15px;
 }
