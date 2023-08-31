@@ -32,7 +32,6 @@ function Contact() {
         </div>
       </form>
 
-      <footer className="footer">© 2023 Björgvin Bessi Kristinsson</footer>
     </div>
   );
 }

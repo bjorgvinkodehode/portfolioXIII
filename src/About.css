@@ -12,3 +12,23 @@
   text-align: left;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 991.98px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--clr-darkbrown);
+    border-radius: 15px;
+  }
+
+  .aboutText {
+    max-width: 700px;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+}

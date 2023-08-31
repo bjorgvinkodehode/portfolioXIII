@@ -29,12 +29,6 @@
   height: 200px;
 }
 
-.footer {
-  margin-top: 20px;
-  text-align: center;
-  color: var(--clr-darkbrown);
-}
-
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -55,6 +49,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .contactform input[type="submit"]:hover {
@@ -81,9 +76,8 @@
 
 @media screen and (max-width: 768px) {
   .contact-container {
-    width: 100%;
-    border-radius: 0;
-    height: 50vh;
+    width: 90%;
+    border-radius: 15px;
   }
 
   .contactform input[type="text"],
