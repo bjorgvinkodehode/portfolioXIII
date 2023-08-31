@@ -6,6 +6,7 @@
 }
 
 .contactform {
+  margin-top: 30px;
   display: grid;
   gap: 15px;
 }
@@ -17,31 +18,15 @@
 .contactform input[type="text"],
 .contactform input[type="email"],
 .contactform textarea {
-  width: 130%;
+  width: 300px;
   padding: 10px;
+  margin-top: 10px;
   border-radius: 10px;
   background-color: var(--clr-white);
 }
 
 .contactform textarea {
-  width: 130%;
   height: 200px;
-  resize: vertical;
-}
-
-.contactform input[type="submit"] {
-  background-color: var(--clr-darkerorange);
-  color: black;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-  margin-top: 10px;
-}
-
-.contactform input[type="submit"]:hover {
-  background-color: var(--clr-white);
 }
 
 .footer {
@@ -50,7 +35,6 @@
   color: var(--clr-darkbrown);
 }
 
-/* Center the form vertically */
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -59,4 +43,20 @@
   min-height: 70vh;
   background-color: var(--clr-darkbrown);
   border-radius: 15px;
+  text-align: start;
+}
+
+.contactform input[type="submit"] {
+  background-color: var(--clr-orange);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.contactform input[type="submit"]:hover {
+  background-color: var(--clr-white);
 }

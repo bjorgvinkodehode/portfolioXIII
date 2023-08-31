@@ -7,6 +7,7 @@
   --clr-darkerorange: #963618;
   --clr-darkviolet: #5d1c94;
   --clr-violet: #f50af5;
+  --clr-white: rgb(207, 207, 207);
 }
 
 *,
@@ -33,7 +34,7 @@ body {
 }
 
 .container {
-  background-image: url("/assets/background5.svg");
+  background-image: url("/assets/background20.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -58,62 +59,125 @@ body {
   font-weight: 200;
   font-family: "Lilita One", cursive;
 }
-@media (max-width: 3000px) {
+
+/* Phones */
+@media (max-width: 575.98px) {
   .header-grid {
-    grid-template-rows: 2fr 5fr 2fr;
+    justify-content: center;
   }
 
-  h2,
-  a {
+  .Welcome {
     font-size: 1.8rem;
   }
 
-  .Welcome {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 2200px) {
-  .header-grid {
-    grid-template-rows: 2fr 5fr 2fr;
-  }
-
-  h2,
-  a {
-    font-size: 1rem;
-  }
-
-  .Welcome {
-    font-size: 3rem;
-  }
-}
-
-/* Media query for tablets */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: row; /* Stack the links vertically */
+  .section {
+    display: flex;
+    flex-direction: row; /* Make sure the elements are in a row */
     justify-content: center;
+    align-items: center;
     gap: 0.1rem;
   }
 
-  nav li {
-    margin-bottom: 0.5rem; /* Add some space between stacked links */
+  .profilepicture {
+    display: block;
+    /* You might need to adjust width, height, and other styles for the image */
+  }
+
+  h2 {
+    display: block;
+    /* You might need to adjust font size and other styles for the heading */
+  }
+}
+@media (max-width: 575.98px) {
+  .header-grid {
+    justify-content: center;
   }
 
   .Welcome {
-    font-size: 2rem; /* Slightly reduce font size for better fit */
+    font-size: 1.8rem;
+  }
+
+  .section {
+    display: grid;
+    flex-direction: column; /* Make sure the elements are in a row */
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
   }
 }
 
-/* Media query for mobile phones */
-@media (max-width: 480px) {
+/* Medium Devices  */
+@media (min-width: 768px) and (max-width: 991.98px) {
   .header-grid {
-    grid-template-rows: 1fr 4fr 1fr; /* Adjust grid rows for smaller screens */
     justify-content: center;
-    gap: 1rem;
   }
 
   .Welcome {
-    font-size: 1.8rem; /* Further reduce font size for mobiles */
+    font-size: 1.8rem;
+  }
+
+  .section {
+    display: grid;
+    flex-direction: column; /* Make sure the elements are in a row */
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+  }
+}
+
+/* Desktops */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header-grid {
+    justify-content: center;
+  }
+
+  .Welcome {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    display: grid;
+    flex-direction: column; /* Make sure the elements are in a row */
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+  }
+}
+
+/* Extra Large Desktops */
+@media (min-width: 1200px) {
+  .header-grid {
+    justify-content: center;
+  }
+
+  .Welcome {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+  }
+}
+
+/* 4K Devices */
+@media (min-width: 3840px) {
+  .header-grid {
+    justify-content: center;
+  }
+
+  .Welcome {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
   }
 }

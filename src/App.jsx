@@ -12,7 +12,7 @@ import Footer from "./Footer";
 function Header() {
     const location = useLocation();
   
-    // Determine the title based on the current path
+   
     let title;
     switch (location.pathname) {
       case '/about':

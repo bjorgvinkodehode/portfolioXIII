@@ -7,7 +7,7 @@ Footer {
   position: fixed;
   left: 50%;
   right: 50%;
-  bottom: 0;
+  bottom: 10px;
 }
 
 .social-icon {

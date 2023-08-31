@@ -11,47 +11,14 @@ h2 {
   margin-right: 20%;
   max-width: 60%;
   max-height: 60%;
-  border: 5px solid var(--clr-orange);
-  border-radius: 20%;
+  border: 5px solid var(--clr-darkbrown);
+  border-radius: 7%;
 }
 
-.section1 {
+.section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   align-items: start;
   grid-gap: 1rem;
-}
-
-/* Media query for tablets */
-@media (max-width: 768px) {
-  .section1 {
-    grid-template-columns: 1fr; /* Makes it a single column */
-  }
-
-  h2 {
-    margin-left: 10%; /* Adjust margins for better spacing */
-    margin-right: 10%;
-  }
-
-  .profilepicture {
-    max-width: 80%; /* Adjust image width */
-    display: block;
-    margin-left: auto; /* Center the image */
-    margin-right: auto;
-  }
-}
-
-/* Media query for mobile phones */
-@media (max-width: 480px) {
-  h2 {
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: center; /* Center the text */
-  }
-
-  .profilepicture {
-    max-width: 90%; /* Adjust image width even more for smaller screens */
-  }
 }
