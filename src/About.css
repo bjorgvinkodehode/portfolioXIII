@@ -4,6 +4,8 @@
   align-items: center;
   margin-top: -2rem;
   color: var(--clr-orange);
+  background-color: var(--clr-darkbrown);
+  border-radius: 15px;
   width: 100%;
 }
 
