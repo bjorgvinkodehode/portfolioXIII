@@ -7,7 +7,7 @@ function Contact() {
       
       <h1>Get in contact with me</h1>
 
-      <form className="contactform" action="https://formsubmit.co/bjorgvinbk@gmail.com" method="POST">
+      <form className="contactform" action="https://formsubmit.co/9415380c896f4483ec9eefda8f9caa15" method="POST">
         <div>
           <label htmlFor="name">Name:</label><br />
           <input type="text" id="name" name="name" placeholder="Enter your name" />
