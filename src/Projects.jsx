@@ -1,11 +1,22 @@
 import './Projects.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';  
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';  // Importing the icons
-
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const MultiPageComponent = () => {
     const [currentPage, setCurrentPage] = useState(1);
+    const [itemsPerPage, setItemsPerPage] = useState(4);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setItemsPerPage(window.innerWidth <= 768 ? 1 : 4);  // Adjust itemsPerPage
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const projects = [
         {
@@ -64,28 +75,28 @@ const MultiPageComponent = () => {
             description: "This was the first website we created, it was about exploring HTML and CSS...",
             githubLink: "https://github.com/bjorgvinkodehode/Pluto"
         },
-        // ... add more project objects as needed
+        
+        
     ];
 
-    const half = Math.ceil(projects.length / 2);
-    const firstPageProjects = projects.slice(0, half);
-    const secondPageProjects = projects.slice(half);
+    const totalPages = Math.ceil(projects.length / itemsPerPage);
+    const currentProjects = projects.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
     return (
         <div className="page-container">
             {/* Page switcher buttons */}
             <div className="page-switcher">
-            <button onClick={() => setCurrentPage(1)} className={currentPage === 1 ? "active" : ""}>
-                <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
-            <button onClick={() => setCurrentPage(2)} className={currentPage === 2 ? "active" : ""}>
-                <FontAwesomeIcon icon={faChevronRight} />
-            </button>
+                <button onClick={() => setCurrentPage(Math.max(1, currentPage - 1))} className={currentPage === 1 ? "disabled" : ""}>
+                    <FontAwesomeIcon icon={faChevronLeft} />
+                </button>
+                <button onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))} className={currentPage === totalPages ? "disabled" : ""}>
+                    <FontAwesomeIcon icon={faChevronRight} />
+                </button>
             </div>
 
             {/* Projects Grid */}
             <div className="project-grid">
-                {(currentPage === 1 ? firstPageProjects : secondPageProjects).map((project, index) => (
+                {currentProjects.map((project, index) => (
                     <div className="card" key={index}>
                         <h2 className="card-title">{project.title}</h2>
                         <a target="_blank" rel="noreferrer" href={project.link} className="card-link">
@@ -103,4 +114,5 @@ const MultiPageComponent = () => {
 }
 
 export default MultiPageComponent;
+
 

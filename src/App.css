@@ -37,7 +37,7 @@ body {
   background-image: url("/assets/background20.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100svh;
   width: 100%;
   bottom: 0;
 }
