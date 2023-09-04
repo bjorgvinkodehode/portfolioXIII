@@ -4,6 +4,8 @@ h2 {
   margin-left: 20%;
   max-width: 80%;
   color: var(--clr-orange);
+}
+.aboutme {
   background-color: var(--clr-darkbrown);
   border-radius: 15px;
 }

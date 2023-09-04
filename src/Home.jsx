@@ -2,7 +2,7 @@ import './Home.css';
 function Home() {
     return (
       <section>
-        <h2>
+        <h2 className='aboutme'>
           My name is Björgvin and I’m a Front-End Developer. Creation is my
           passion & troubleshooting is my endeavor, programming helps me
           achieve both.

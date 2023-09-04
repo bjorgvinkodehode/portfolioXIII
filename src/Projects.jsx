@@ -18,7 +18,7 @@ const MultiPageComponent = () => {
         if (window.innerWidth <= 480) {
           setItemsPerPage(isTouchDevice ? 1 : 1); 
         } else if (window.innerWidth <= 768) {
-          setItemsPerPage(isTouchDevice ? 2 : 2); 
+          setItemsPerPage(isTouchDevice ? 1 : 1); 
         } else {
           setItemsPerPage(isTouchDevice ? 4 : 4); 
         }
