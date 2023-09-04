@@ -16,11 +16,11 @@ const MultiPageComponent = () => {
 
       const handleResize = () => {
         if (window.innerWidth <= 480) {
-          setItemsPerPage(isTouchDevice ? 1 : 1);  // For really small screens
+          setItemsPerPage(isTouchDevice ? 1 : 1); 
         } else if (window.innerWidth <= 768) {
-          setItemsPerPage(isTouchDevice ? 2 : 2);  // For tablets and small screens
+          setItemsPerPage(isTouchDevice ? 2 : 2); 
         } else {
-          setItemsPerPage(isTouchDevice ? 4 : 4);  // For desktop
+          setItemsPerPage(isTouchDevice ? 4 : 4); 
         }
       };
 
@@ -101,16 +101,6 @@ const MultiPageComponent = () => {
 
     return (
         <div className="page-container">
-            {/* Page switcher buttons */}
-            <div className="page-switcher">
-                <button onClick={() => setCurrentPage(Math.max(1, currentPage - 1))} className={currentPage === 1 ? "disabled" : ""}>
-                    <FontAwesomeIcon icon={faChevronLeft} />
-                </button>
-                <button onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))} className={currentPage === totalPages ? "disabled" : ""}>
-                    <FontAwesomeIcon icon={faChevronRight} />
-                </button>
-            </div>
-
             {/* Projects Grid */}
             <div className="project-grid">
                 {currentProjects.map((project, index) => (
@@ -126,10 +116,18 @@ const MultiPageComponent = () => {
                     </div>
                 ))}
             </div>
+    
+            {/* Page switcher buttons */}
+            <div className="page-switcher">
+                <button onClick={() => setCurrentPage(Math.max(1, currentPage - 1))} className={currentPage === 1 ? "disabled" : ""}>
+                    <FontAwesomeIcon icon={faChevronLeft} />
+                </button>
+                <button onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))} className={currentPage === totalPages ? "disabled" : ""}>
+                    <FontAwesomeIcon icon={faChevronRight} />
+                </button>
+            </div>
         </div>
     );
 }
-
 export default MultiPageComponent;
-
 
