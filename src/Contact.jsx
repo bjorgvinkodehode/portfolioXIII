@@ -1,23 +1,43 @@
 
 import './Contact.css';
 
-const email = 'bjorgvinbk@gmail.com';
-
-const Contact = () => {
-  const handleEmailClick = () => {
-    const subject = encodeURIComponent('Jeg vil gjerne komme i kontakt med deg');
-    const body = encodeURIComponent('Hei Björgvin,');
-
-    window.open(`mailto:${email}?subject=${subject}&body=${body}`);
-  };
-
+function Contact() {
   return (
-    <div>
+    <div className="contact-container">
+      
       <h1>Get in contact with me</h1>
 
-      <button onClick={handleEmailClick}>Contact me via email</button>
+      <form className="contactform" action="https://formsubmit.co/bjorgvinbk@gmail.com" method="POST">
+        <div>
+          <label htmlFor="name">Name:</label><br />
+          <input type="text" id="name" name="name" placeholder="Enter your name" />
+        </div>
+
+        <div>
+          <label htmlFor="email">Email:</label><br />
+          <input type="email" id="email" name="email" placeholder="Enter your email" />
+        </div>
+
+        <div>
+          <label htmlFor="subject">Subject:</label><br />
+          <input type="text" id="subject" name="subject" placeholder="Enter the subject" />
+        </div>
+
+        <div>
+          <label htmlFor="message">Message:</label><br />
+          <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+        </div>
+
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+
     </div>
   );
 }
 
 export default Contact;
+
+
+
