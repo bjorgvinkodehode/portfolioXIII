@@ -6,16 +6,33 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 const MultiPageComponent = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState(4);
-
+    
     useEffect(() => {
-        const handleResize = () => {
-            setItemsPerPage(window.innerWidth <= 768 ? 1 : 4);  // Adjust itemsPerPage
-        };
+      let isTouchDevice = false;
 
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
+      const handleTouchStart = () => {
+        isTouchDevice = true;
+      };
+
+      const handleResize = () => {
+        if (window.innerWidth <= 480) {
+          setItemsPerPage(isTouchDevice ? 1 : 1);  // For really small screens
+        } else if (window.innerWidth <= 768) {
+          setItemsPerPage(isTouchDevice ? 2 : 2);  // For tablets and small screens
+        } else {
+          setItemsPerPage(isTouchDevice ? 4 : 4);  // For desktop
+        }
+      };
+
+      window.addEventListener('resize', handleResize);
+      window.addEventListener('touchstart', handleTouchStart);
+
+      handleResize(); // Initial call to set itemsPerPage based on window size
+      
+      return () => {
+        window.removeEventListener('resize', handleResize);
+        window.removeEventListener('touchstart', handleTouchStart);
+      };
     }, []);
 
     const projects = [

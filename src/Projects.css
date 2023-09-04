@@ -31,7 +31,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  height: 60vh;
   padding: 0 2.2rem 2.2rem;
 }
 
@@ -42,7 +41,7 @@
   transition: all 0.3s ease-in-out;
   background-color: var(--clr-darkerorange);
   border-radius: 15px;
-  max-height: 70svh;
+  box-sizing: border-box;
 }
 
 .card:hover {
@@ -76,6 +75,9 @@
 @media screen and (max-width: 1080px) {
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    max-height: 70vh;
   }
 }
 
