@@ -1,7 +1,6 @@
 import './about.css';
 function About() {
   return (
-    <div>
         <section className="about">
           <p className="aboutText">
             Before becoming a front-end developer, I worked as a system
@@ -21,10 +20,9 @@ function About() {
             I&apos;m resourceful and punctual, always delivering high-quality work on
             time. I&apos;m also thoughtful and helpful, always willing to collaborate
             and share my skills and knowledge.
-
           </p>
         </section>
-    </div>
+    
   );
 }
 

@@ -120,7 +120,7 @@ const MultiPageComponent = () => {
                 ))}
             </div>
     
-            {/* Page switcher buttons */}
+          
             <div className="page-switcher">
                 <button onClick={() => setCurrentPage(Math.max(1, currentPage - 1))} className={currentPage === 1 ? "disabled" : ""}>
                     <FontAwesomeIcon icon={faChevronLeft} />

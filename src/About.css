@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   color: var(--clr-orange);
   background-color: var(--clr-darkbrown);
   border-radius: 15px;
@@ -17,6 +16,7 @@
   margin-bottom: 1rem;
   font-size: 20px;
 }
+
 @media (max-width: 991.98px) {
   .about {
     display: flex;

@@ -8,9 +8,7 @@
   left: 0;
   right: 0;
   margin-bottom: 1rem;
-  color: var(--clr-orange);
-  background-color: var(--clr-darkbrown);
-  border-radius: 15px;
+  color: var(--clr-darkbrown);
   z-index: 1000;
   width: 440px;
   padding: 7px;

@@ -1,10 +1,10 @@
 h2 {
   font-weight: 100;
-  margin-top: 20%;
+  padding-top: 20%;
   margin-left: 20%;
   max-width: 80%;
   color: var(--clr-orange);
-  text-align: center; /* Center align text */
+  text-align: center;
 }
 
 .aboutme {
@@ -18,24 +18,23 @@ h2 {
   max-height: 60%;
   border: 5px solid var(--clr-darkbrown);
   border-radius: 10%;
-  margin-left: auto; /* Auto margin to center align */
-  margin-right: auto; /* Auto margin to center align */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center; /* Center items */
+  place-items: center;
   align-items: start;
   grid-gap: 1rem;
 }
 
-/* Media Query for 1920px */
 @media (max-width: 1920px) {
   h2 {
-    margin-top: 10%;
-    margin-left: auto; /* Auto margin for centering */
-    margin-right: auto; /* Auto margin for centering */
+    padding-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .aboutme {
