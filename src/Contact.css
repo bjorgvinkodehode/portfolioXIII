@@ -85,6 +85,35 @@
   .contactform textarea {
     width: 100%;
   }
+  @media (min-width: 1920px) {
+    .contact-container {
+      width: 800px;  
+      padding: 40px; / 
+    }
+
+    .contactform {
+      gap: 30px;  
+    }
+
+    .contactform label {
+      font-size: 1.2rem;  
+    }
+
+    .contactform input[type="text"],
+    .contactform input[type="email"],
+    .contactform textarea {
+      width: 600px;  
+      padding: 15px;  
+    }
+
+    .contactform textarea {
+      height: 300px;  
+    }
+
+    .contactform input[type="submit"] {
+      padding: 15px 30px;  
+    }
+  }
 
   @media screen and (min-width: 3840px) {
     .contact-container {

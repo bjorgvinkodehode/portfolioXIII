@@ -4,7 +4,9 @@ h2 {
   margin-left: 20%;
   max-width: 80%;
   color: var(--clr-orange);
+  text-align: center; /* Center align text */
 }
+
 .aboutme {
   background-color: var(--clr-darkbrown);
   border-radius: 15px;
@@ -12,50 +14,72 @@ h2 {
 
 .profilepicture {
   margin-top: 5%;
-  margin-right: 20%;
   max-width: 60%;
   max-height: 60%;
   border: 5px solid var(--clr-darkbrown);
   border-radius: 10%;
+  margin-left: auto; /* Auto margin to center align */
+  margin-right: auto; /* Auto margin to center align */
 }
 
 section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
+  place-items: center; /* Center items */
   align-items: start;
   grid-gap: 1rem;
 }
 
-/* Media query for tablets */
+/* Media Query for 1920px */
+@media (max-width: 1920px) {
+  h2 {
+    margin-top: 10%;
+    margin-left: auto; /* Auto margin for centering */
+    margin-right: auto; /* Auto margin for centering */
+  }
+
+  .aboutme {
+    padding: 1.3rem;
+  }
+
+  .profilepicture {
+    max-width: 60%;
+    max-height: 60%;
+  }
+
+  section {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   section {
-    grid-template-columns: 1fr; /* Makes it a single column */
+    grid-template-columns: 1fr;
   }
 
   h2 {
-    margin-left: 10%; /* Adjust margins for better spacing */
+    margin-left: 10%;
     margin-right: 10%;
   }
 
   .profilepicture {
-    max-width: 80%; /* Adjust image width */
+    max-width: 80%;
     display: block;
-    margin-left: auto; /* Center the image */
+    margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* Media query for mobile phones */
 @media (max-width: 480px) {
   h2 {
     margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
-    text-align: center; /* Center the text */
+    text-align: center;
   }
 
   .profilepicture {
-    max-width: 90%; /* Adjust image width even more for smaller screens */
+    max-width: 90%;
   }
 }

@@ -39,59 +39,62 @@ const MultiPageComponent = () => {
         {
             title: "Parallax",
             link: "https://bjorgvinkodehode.github.io/Parallax/",
-            imageUrl: "assets/Parallax.png",
+            imageUrl: "assets/Parallax.jpg",
             description: "This was the first website we created",
             githubLink: "https://github.com/bjorgvinkodehode/Parallax"
         },
         {
             title: "Pluto",
             link: "https://bjorgvinkodehode.github.io/Pluto/",
-            imageUrl: "assets/pluto.png",
+            imageUrl: "assets/pluto.jpg",
             description: "First bigger project, and i was really happy when i delivered this",
             githubLink: "https://github.com/bjorgvinkodehode/Pluto"
         },
         {
             title: "Neptune",
             link: "https://bjorgvinkodehode.github.io/Neptune/",
-            imageUrl: "assets/Neptune.png",
+            imageUrl: "assets/Neptune.jpg",
             description: "Also the first bigger project, i could not decide what to do so i created two, this one is broken by design",
             githubLink: "https://github.com/bjorgvinkodehode/Neptune"
         },
         {
             title: "Game Of Life",
             link: "https://bjorgvinkodehode.github.io/GameOfLife/",
-            imageUrl: "assets/GameOfLife.png",
+            imageUrl: "assets/GameOfLife.jpg",
             description: "The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.",
             githubLink: "https://github.com/bjorgvinkodehode/GameOfLife"
         },
         {
             title: "Calculator",
             link: "https://bjorgvinkodehode.github.io/Calculator2//",
-            imageUrl: "/assets/Calculator.png",
+            imageUrl: "/assets/Calculator.jpg",
             description: "The summer project was to create this calculator. ",
             githubLink: "https://github.com/bjorgvinkodehode/Calculator2"
         },
         {
             title: "What To Watch",
             link: "https://bjorgvinkodehode.github.io/What-to-watch/",
-            imageUrl: "/assets/Whattowatch.png",
+            imageUrl: "/assets/Whattowatch.jpg",
             description: "This site generates a random movie based on a genere using an API",
             githubLink: "https://github.com/bjorgvinkodehode/What-to-watch"
         },
+
         {
-            title: "Project G",
-            link: "https://bjorgvinkodehode.github.io/Pluto/",
-            imageUrl: "src/assets/pluto.png",
-            description: "This was the first website we created, it was about exploring HTML and CSS...",
-            githubLink: "https://github.com/bjorgvinkodehode/Pluto"
+            title: "Calculator",
+            link: "https://bjorgvinkodehode.github.io/Calculator2//",
+            imageUrl: "/assets/Calculator.jpg",
+            description: "The summer project was to create this calculator. ",
+            githubLink: "https://github.com/bjorgvinkodehode/Calculator2"
         },
         {
-            title: "Project H",
-            link: "https://bjorgvinkodehode.github.io/Pluto/",
-            imageUrl: "src/assets/pluto.png",
-            description: "This was the first website we created, it was about exploring HTML and CSS...",
-            githubLink: "https://github.com/bjorgvinkodehode/Pluto"
+            title: "What To Watch",
+            link: "https://bjorgvinkodehode.github.io/What-to-watch/",
+            imageUrl: "/assets/Whattowatch.jpg",
+            description: "This site generates a random movie based on a genere using an API",
+            githubLink: "https://github.com/bjorgvinkodehode/What-to-watch"
         },
+        
+   
         
         
     ];

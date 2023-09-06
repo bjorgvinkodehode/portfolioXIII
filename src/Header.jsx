@@ -15,9 +15,9 @@ function Header() {
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-
             <div className="Welcome">Welcome!</div>
         </div>
+
     );
 }
 
