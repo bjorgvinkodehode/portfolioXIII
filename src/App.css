@@ -36,10 +36,10 @@ body {
   font-family: "Lilita One", cursive;
 }
 
-.container {
+body {
   background-image: url("/assets/background20.svg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100vw, 100vh;
   background-position: center;
 }
 

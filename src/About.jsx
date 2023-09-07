@@ -22,7 +22,6 @@ function About() {
             and share my skills and knowledge.
           </p>
         </section>
-    
   );
 }
 

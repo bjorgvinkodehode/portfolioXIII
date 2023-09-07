@@ -4,9 +4,7 @@ import './Contact.css';
 function Contact() {
   return (
     <div className="contact-container">
-      
       <h1>Get in contact with me</h1>
-
       <form className="contactform" action="https://formsubmit.co/9415380c896f4483ec9eefda8f9caa15" method="POST">
         <div>
           <label htmlFor="name">Name:</label><br />
