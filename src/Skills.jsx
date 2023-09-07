@@ -10,9 +10,9 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faFileCode, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import './Skills.css';
-function MyIconsDiv() {
+function Skills() {
   return (
-    <div className='fontawsome'>
+    <footer className='fontawsome'>
       <FontAwesomeIcon icon={faHtml5} className="icon" />
       <FontAwesomeIcon icon={faCss3Alt} className="icon" />
       <FontAwesomeIcon icon={faJsSquare} className="icon" />
@@ -22,8 +22,8 @@ function MyIconsDiv() {
       <FontAwesomeIcon icon={faFigma} className="icon" />
       <FontAwesomeIcon icon={faCodeBranch} className="icon" /> {/* Placeholder for Git */}
       <FontAwesomeIcon icon={faWindows} className="icon" />
-    </div>
+    </footer>
   );
 }
 
-export default MyIconsDiv;
+export default Skills;

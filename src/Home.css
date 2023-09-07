@@ -1,10 +1,14 @@
+section {
+  height: 70vh;
+}
 h2 {
   font-weight: 100;
-  padding-top: 20%;
-  margin-left: 20%;
-  max-width: 80%;
+  max-width: 30%;
   color: var(--clr-orange);
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
 }
 
 .aboutme {
@@ -13,72 +17,10 @@ h2 {
 }
 
 .profilepicture {
-  margin-top: 5%;
   max-width: 60%;
-  max-height: 60%;
+  max-height: 50%;
   border: 5px solid var(--clr-darkbrown);
   border-radius: 10%;
   margin-left: auto;
   margin-right: auto;
-}
-
-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-  align-items: start;
-  grid-gap: 1rem;
-}
-
-@media (max-width: 1920px) {
-  h2 {
-    padding-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .aboutme {
-    padding: 1.3rem;
-  }
-
-  .profilepicture {
-    max-width: 60%;
-    max-height: 60%;
-  }
-
-  section {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  section {
-    grid-template-columns: 1fr;
-  }
-
-  h2 {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  .profilepicture {
-    max-width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  h2 {
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: center;
-  }
-
-  .profilepicture {
-    max-width: 90%;
-  }
 }
