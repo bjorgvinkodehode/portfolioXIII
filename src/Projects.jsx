@@ -27,7 +27,7 @@ const MultiPageComponent = () => {
       window.addEventListener('resize', handleResize);
       window.addEventListener('touchstart', handleTouchStart);
 
-      handleResize(); // Initial call to set itemsPerPage based on window size
+      handleResize();
       
       return () => {
         window.removeEventListener('resize', handleResize);
@@ -104,7 +104,6 @@ const MultiPageComponent = () => {
 
     return (
         <div className="page-container">
-            {/* Projects Grid */}
             <div className="project-grid">
                 {currentProjects.map((project, index) => (
                     <div className="card" key={index}>

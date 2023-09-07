@@ -1,13 +1,6 @@
 function Header() {
     return (
         <div className="header-grid">
-            <label htmlFor="menu-toggle" className="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <input type="checkbox" id="menu-toggle" className="menu-toggle" />
-
             <nav className="nav-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>

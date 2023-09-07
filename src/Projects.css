@@ -10,7 +10,7 @@
   right: 0;
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
   z-index: 1000;
 }
 .project-grid {
@@ -46,8 +46,7 @@
 .card-image {
   width: 100%;
   height: auto;
-  max-height: 90%; /* Set max-height */
-  object-fit: cover; /* Cover entire space without distorting the image */
+  object-fit: cover;
 }
 
 .card:hover {
