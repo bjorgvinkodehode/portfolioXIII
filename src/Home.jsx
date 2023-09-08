@@ -9,7 +9,7 @@ function Home() {
         </h2>
         <img
           className="profilepicture"
-          src="assets/bbbb.jpg"
+          src="assets/bbbbb.png"
           alt="picture of the developer"
         />
       </section>
