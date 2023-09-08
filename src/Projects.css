@@ -3,6 +3,12 @@
   padding: 0.4rem;
   margin: 0;
 }
+.card-title {
+  font-size: 0.9rem;
+}
+.card-description {
+  font-size: 0.7rem;
+}
 
 .page-switcher {
   position: fixed;
@@ -14,6 +20,7 @@
   padding-bottom: 3rem;
   z-index: 1000;
 }
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -74,39 +81,6 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 2200px) {
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 0.5rem;
-    padding: 0 2.2rem 2.2rem;
-  }
-  .card {
-    max-width: 340px;
-    max-height: 650px;
-  }
-  .card:hover {
-    transform: scale(1.1);
-    z-index: 1;
-  }
-
-  .card-image {
-    width: 100%;
-    transition: transform 0.1s ease-in-out;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
 @media screen and (max-width: 480px) {
   .project-grid {
     grid-template-columns: 1fr;
@@ -118,5 +92,55 @@
   }
   .page-switcher button {
     margin: 0 0.3rem;
+  }
+  .card-title {
+    font-size: 1.4rem;
+  }
+  .card-description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 2199px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
+    padding: 0 2.2rem 2.2rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-description {
+    font-size: 0.7rem;
+  }
+
+  .card {
+    max-width: 340px;
+    max-height: 650px;
+  }
+  .card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .card-image {
+    width: 100%;
+    transition: transform 0.1s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+  }
+  .card {
+    max-width: 600px;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-description {
+    font-size: 0.7rem;
   }
 }

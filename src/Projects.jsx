@@ -8,30 +8,23 @@ const MultiPageComponent = () => {
     const [itemsPerPage, setItemsPerPage] = useState(4);
     
     useEffect(() => {
-      let isTouchDevice = false;
-
-      const handleTouchStart = () => {
-        isTouchDevice = true;
-      };
-
-      const handleResize = () => {
-        if (window.innerWidth <= 480) {
-          setItemsPerPage(isTouchDevice ? 1 : 1); 
-        } else if (window.innerWidth <= 768) {
-          setItemsPerPage(isTouchDevice ? 1 : 1); 
-        } else {
-          setItemsPerPage(isTouchDevice ? 5 : 5); 
-        }
-      };
-
-      window.addEventListener('resize', handleResize);
-      window.addEventListener('touchstart', handleTouchStart);
-
-      handleResize();
+        const handleResize = () => {
+            const cardWidth = 340; 
+            const gap = 8;
+            const padding = 35.2; 
+            const gridWidth = document.querySelector('.project-grid')?.offsetWidth - (2 * padding);
+            const cardsPerRow = Math.floor((gridWidth + gap) / (cardWidth + gap));
+            
+            setItemsPerPage(Math.max(1, cardsPerRow));
+          };
+    
+     
+        window.addEventListener('resize', handleResize);
+        handleResize();
+    
       
-      return () => {
-        window.removeEventListener('resize', handleResize);
-        window.removeEventListener('touchstart', handleTouchStart);
+        return () => {
+            window.removeEventListener('resize', handleResize);
       };
     }, []);
 
@@ -79,24 +72,6 @@ const MultiPageComponent = () => {
             githubLink: "https://github.com/bjorgvinkodehode/What-to-watch"
         },
 
-        {
-            title: "Calculator",
-            link: "https://bjorgvinkodehode.github.io/Calculator2/",
-            imageUrl: "/assets/Calculator.jpg",
-            description: "The summer project was to create this calculator. ",
-            githubLink: "https://github.com/bjorgvinkodehode/Calculator2"
-        },
-        {
-            title: "What To Watch",
-            link: "https://bjorgvinkodehode.github.io/What-to-watch/",
-            imageUrl: "/assets/Whattowatch.jpg",
-            description: "This site generates a random movie based on a genere using an API",
-            githubLink: "https://github.com/bjorgvinkodehode/What-to-watch"
-        },
-        
-   
-        
-        
     ];
 
     const totalPages = Math.ceil(projects.length / itemsPerPage);

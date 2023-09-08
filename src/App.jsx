@@ -1,4 +1,4 @@
-import  { useEffect } from 'react';
+/* import  { useEffect } from 'react'; */
 import './App.css';
 import './Header.css';
 import { HashRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
@@ -43,7 +43,7 @@ function Header() {
 }
 
 function App() {
-  // Add this useEffect to your existing App component
+/*   // Add this useEffect to your existing App component
   useEffect(() => {
     const setAppHeight = () => {
       const vh = window.innerHeight * 0.01;
@@ -54,7 +54,7 @@ function App() {
     window.addEventListener('resize', setAppHeight);
 
     return () => window.removeEventListener('resize', setAppHeight);
-  }, []);
+  }, []); */
 
   return (
     <Router>

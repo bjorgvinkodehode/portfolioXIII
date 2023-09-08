@@ -1,5 +1,5 @@
 :root {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 200;
   font-family: "Lilita One", cursive;
   --clr-darkbrown: #210606;
@@ -33,14 +33,13 @@ li {
 
 body {
   background-color: var(--clr-darkbrown);
-  color: var(--clr-orange);
   text-align: center;
   font-size: 16px;
   font-weight: 200;
   font-family: "Lilita One", cursive;
   background-image: url("/assets/background20.svg");
   background-repeat: no-repeat;
-  background-size: 100vw, 100vh;
+  background-size: cover;
   background-position: center;
 }
 .container {
@@ -48,9 +47,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.svg-inline--fa {
-  height: 1.3rem;
+.container {
+  height: 100vh; /* Take up full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space elements so that footer is pushed to the bottom */
 }
 
 a {
@@ -62,4 +63,33 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 20px;
+  }
+  body {
+    background-size: cover;
+  }
+}
+
+/* Style changes for 1080p screens */
+@media (min-width: 1080px) {
+  :root {
+    font-size: 22px;
+  }
+  body {
+    background-size: cover;
+  }
+}
+
+/* Style changes for screens larger than 1080p */
+@media (min-width: 1921px) {
+  :root {
+    font-size: 24px;
+  }
+  body {
+    background-size: cover;
+  }
 }
