@@ -1,21 +1,16 @@
-
-.contact-container {
-  width: 450px;
-  margin: 0 auto;
-}
 .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 450px;
+  margin: 0 auto;
   max-height: 63vh;
   background-color: var(--clr-darkbrown);
   border-radius: 15px;
   text-align: start;
   color: var(--clr-orange);
 }
-
-
 
 .contactform {
   margin-top: 30px;
@@ -62,17 +57,26 @@
   .contact-container {
     width: 100%;
     border-radius: 0;
-    height: 50vh;
+  }
+
+  .contactform {
+    margin-top: 20px;
+    gap: 10px; 
   }
 
   .contactform input[type="text"],
   .contactform input[type="email"],
   .contactform textarea {
-    width: 100%;
+    width: calc(100% - 20px); 
+  }
+
+  .contactform textarea {
+    height: 150px; 
   }
 
   .contactform input[type="submit"] {
-    margin-top: 15px;
+    margin-top: 10px;  
+    margin-bottom: 10px; 
   }
 }
 
