@@ -60,14 +60,14 @@ const MultiPageComponent = () => {
         {
             title: "Calculator",
             link: "https://bjorgvinkodehode.github.io/Calculator2/",
-            imageUrl: "/assets/Calculator.jpg",
+            imageUrl: "assets/Calculator.jpg",
             description: "The summer project was to create this calculator. ",
             githubLink: "https://github.com/bjorgvinkodehode/Calculator2"
         },
         {
             title: "What To Watch",
             link: "https://bjorgvinkodehode.github.io/What-to-watch/",
-            imageUrl: "/assets/Whattowatch.jpg",
+            imageUrl: "assets/Whattowatch.jpg",
             description: "This site generates a random movie based on a genere using an API",
             githubLink: "https://github.com/bjorgvinkodehode/What-to-watch"
         },
