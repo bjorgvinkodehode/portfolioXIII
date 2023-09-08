@@ -20,7 +20,7 @@ const MultiPageComponent = () => {
         } else if (window.innerWidth <= 768) {
           setItemsPerPage(isTouchDevice ? 1 : 1); 
         } else {
-          setItemsPerPage(isTouchDevice ? 4 : 4); 
+          setItemsPerPage(isTouchDevice ? 5 : 5); 
         }
       };
 
@@ -58,7 +58,7 @@ const MultiPageComponent = () => {
             githubLink: "https://github.com/bjorgvinkodehode/Neptune"
         },
         {
-            title: "Game Of Life",
+            title:"Life",
             link: "https://bjorgvinkodehode.github.io/GameOfLife/",
             imageUrl: "assets/GameOfLife.jpg",
             description: "The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.",
@@ -66,7 +66,7 @@ const MultiPageComponent = () => {
         },
         {
             title: "Calculator",
-            link: "https://bjorgvinkodehode.github.io/Calculator2//",
+            link: "https://bjorgvinkodehode.github.io/Calculator2/",
             imageUrl: "/assets/Calculator.jpg",
             description: "The summer project was to create this calculator. ",
             githubLink: "https://github.com/bjorgvinkodehode/Calculator2"
@@ -81,7 +81,7 @@ const MultiPageComponent = () => {
 
         {
             title: "Calculator",
-            link: "https://bjorgvinkodehode.github.io/Calculator2//",
+            link: "https://bjorgvinkodehode.github.io/Calculator2/",
             imageUrl: "/assets/Calculator.jpg",
             description: "The summer project was to create this calculator. ",
             githubLink: "https://github.com/bjorgvinkodehode/Calculator2"
