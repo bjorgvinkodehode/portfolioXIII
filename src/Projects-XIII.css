@@ -1,0 +1,146 @@
+.card-title,
+.card-description {
+  padding: 0.4rem;
+  margin: 0;
+}
+.card-title {
+  font-size: 0.9rem;
+}
+.card-description {
+  font-size: 0.7rem;
+}
+
+.page-switcher {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+  z-index: 1000;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.4rem;
+  padding: 0 2.2rem 2.2rem;
+}
+
+.page-switcher button {
+  margin: 0 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--clr-darkbrown);
+  opacity: 0.5;
+}
+
+.page-switcher button.active,
+.page-switcher button:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--clr-darkerorange);
+  border-radius: 15px;
+  max-width: 500px;
+}
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.card-image {
+  width: 100%;
+  transition: transform 0.1s ease-in-out;
+}
+
+.card-link:hover .card-image {
+  transform: scale(1);
+}
+
+.card-description,
+.card-description-link {
+  color: var(--clr-darkbrown);
+}
+
+.card-description-link {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem 1rem;
+  }
+  .card {
+    max-height: auto;
+    min-height: 50vh;
+  }
+  .page-switcher button {
+    margin: 0 0.3rem;
+  }
+  .card-title {
+    font-size: 1.4rem;
+  }
+  .card-description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 2199px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
+    padding: 0 2.2rem 2.2rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-description {
+    font-size: 0.7rem;
+  }
+
+  .card {
+    max-width: 340px;
+    max-height: 650px;
+  }
+  .card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .card-image {
+    width: 100%;
+    transition: transform 0.1s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+  }
+  .card {
+    max-width: 600px;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-description {
+    font-size: 0.7rem;
+  }
+}
