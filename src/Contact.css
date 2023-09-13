@@ -1,0 +1,140 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  margin: 0 auto;
+  max-height: 63vh;
+  background-color: var(--clr-darkbrown);
+  border-radius: 15px;
+  text-align: start;
+  color: var(--clr-orange);
+}
+
+.contactform {
+  margin-top: 30px;
+  display: grid;
+  gap: 15px;
+}
+
+.contactform label {
+  font-weight: bold;
+}
+
+.contactform input[type="text"],
+.contactform input[type="email"],
+.contactform textarea {
+  width: 300px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: var(--clr-white);
+}
+
+.contactform textarea {
+  height: 200px;
+}
+
+
+
+.contactform input[type="submit"] {
+  background-color: var(--clr-orange);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 2.6rem;
+}
+
+.contactform input[type="submit"]:hover {
+  background-color: var(--clr-darkerorange);
+}
+
+@media screen and (max-width: 480px) {
+  .contact-container {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .contactform {
+    margin-top: 20px;
+    gap: 10px; 
+  }
+
+  .contactform input[type="text"],
+  .contactform input[type="email"],
+  .contactform textarea {
+    width: calc(100% - 20px); 
+  }
+
+  .contactform textarea {
+    height: 150px; 
+  }
+
+  .contactform input[type="submit"] {
+    margin-top: 10px;  
+    margin-bottom: 10px; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    width: 90%;
+    border-radius: 15px;
+  }
+
+  .contactform input[type="text"],
+  .contactform input[type="email"],
+  .contactform textarea {
+    width: 100%;
+  }
+  @media (min-width: 1920px) {
+    .contact-container {
+      width: 800px;  
+      padding: 40px; / 
+    }
+
+    .contactform {
+      gap: 30px;  
+    }
+
+    .contactform label {
+      font-size: 1.2rem;  
+    }
+
+    .contactform input[type="text"],
+    .contactform input[type="email"],
+    .contactform textarea {
+      width: 600px;  
+      padding: 15px;  
+    }
+
+    .contactform textarea {
+      height: 300px;  
+    }
+
+    .contactform input[type="submit"] {
+      padding: 15px 30px;  
+    }
+  }
+
+  @media screen and (min-width: 3840px) {
+    .contact-container {
+      width: 1200px;
+      border-radius: 15px;
+    }
+
+    .contactform input[type="text"],
+    .contactform input[type="email"],
+    .contactform textarea {
+      width: 500px;
+    }
+
+    .contactform input[type="submit"] {
+      margin-top: 20px;
+    }
+  }
+}

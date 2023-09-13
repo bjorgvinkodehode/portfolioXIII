@@ -1,0 +1,42 @@
+section {
+  height: 70vh;
+}
+h2 {
+  font-weight: 100;
+  max-width: 30%;
+  color: var(--clr-orange);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.aboutme {
+  background-color: var(--clr-darkbrown);
+  border-radius: 15px;
+}
+
+.profilepicture {
+  max-width: 60%;
+  max-height: 50%;
+  border: 5px solid var(--clr-darkbrown);
+  border-radius: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1079px) {
+  h2 {
+    font-size: 4vw;
+    max-width: 90%;
+  }
+  .profilepicture {
+    max-width: 80%;
+    max-height: 60%;
+  }
+}
+@media (min-width: 1921px) {
+  h2 {
+    font-size: 1.5vw;
+  }
+}
